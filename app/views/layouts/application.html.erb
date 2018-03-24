@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails Devise - Omniauth - Omniauth-Facebook Base App</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+      <a class="navbar-brand text-white p-2" href="/"><% if user_signed_in? && current_user.image? %><%= image_tag current_user.image + "?type=small", class: "d-inline-block mr-2 rounded" %><% end %>Rails Devise - Omniauth - Omniauth-Facebook - Bootstrap Base App</a>
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav">
+          <% if user_signed_in? %>
+          <%= link_to "Edit profile", edit_user_registration_path, class: 'nav-item nav-link text-white' %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-item nav-link text-white'  %>
+          <% else %>
+          <%= link_to "Sign Up!", new_user_registration_path, class: 'nav-item nav-link text-white'  %>
+          <%= link_to "Login", new_user_session_path, class: 'nav-item nav-link text-white'  %>
+          <% end %>
+        </nav>
+        <p class="notice">
+          <%= notice %>
+        </p>
+        <p class="alert">
+          <%= alert %>
+        </p>
+        <div class="container-fluid">
+          <%= yield %>
+        </div>
+      </body>
+    </html>
