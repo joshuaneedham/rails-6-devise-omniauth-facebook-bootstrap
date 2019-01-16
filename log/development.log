@@ -51705,3 +51705,59 @@ Completed 200 OK in 540ms (Views: 516.3ms | ActiveRecord: 0.8ms)
 
 Started GET "/users/auth/facebook" for 127.0.0.1 at 2018-03-21 11:56:46 -0600
 Started GET "/users/auth/facebook" for 127.0.0.1 at 2018-03-21 11:56:47 -0600
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-01-16 14:53:37 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 25ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-01-16 14:53:37 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 3108ms (Views: 3080.6ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+Started GET "/users/sign_in" for ::1 at 2019-01-16 14:54:55 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (3.2ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 492ms (Views: 456.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-01-16 14:54:59 -0500
+Started GET "/users/auth/facebook" for ::1 at 2019-01-16 14:54:59 -0500
