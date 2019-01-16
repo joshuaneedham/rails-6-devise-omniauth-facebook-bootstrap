@@ -4,4 +4,4 @@ This base project aims to make using `devise`, `omniauth`, `omniauth-facebook`, 
 
 More instructions to come once I get a chance to breath. Thanks for our support!
 
-You'll probably want to update the naming in this file https://github.com/joshuaneedham/rails-5-devise-omniauth-facebook-bootstrap/blob/master/config/application.rb 
+You'll probably want to update the module name in this file https://github.com/joshuaneedham/rails-5-devise-omniauth-facebook-bootstrap/blob/master/config/application.rb 
