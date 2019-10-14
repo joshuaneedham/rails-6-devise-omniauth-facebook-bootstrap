@@ -51774,6 +51774,56 @@ for all models and all boolean columns, after which the flag must be set to
 true by adding the following to your application.rb file:
 
   Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+ (called from <top (required)> at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-29 10:17:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-29 10:17:35 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (1.2ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 2193ms (Views: 2153.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-29 10:17:44 -0400
+=======
+>>>>>>> 5114d4c
  (called from <top (required)> at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
 Started GET "/" for ::1 at 2019-05-20 19:02:50 -0400
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -51802,6 +51852,10 @@ Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/users/sign_up" for ::1 at 2019-05-20 19:03:22 -0400
+<<<<<<< HEAD
+=======
+>>>>>>> Updating gems due to security issues
+>>>>>>> 5114d4c
 Processing by Devise::RegistrationsController#new as HTML
   Rendering devise/registrations/new.html.erb within layouts/application
   Rendered devise/shared/_fb_login.html.erb (0.6ms)
@@ -51809,10 +51863,58 @@ DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
 is deprecated and it will be removed in the next major version.
 To customize the errors styles please run `rails g devise:views` and modify the
 `devise/shared/error_messages` partial.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+ (called from block in _app_views_devise_registrations_new_html_erb__2660937650640832014_70245716911220 at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/registrations/new.html.erb:6)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-05-29 10:18:06 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5IBPNVASFCgM4F0kBudB3aHxQvD2t7sIVxzKSb78jA0JPQ+Vk6geVWYnzu5VDX7LNmmnPqHBrS87Nhc7u1lisg==", "user"=>{"email"=>"joshua.needham@cognizant.com", "name"=>"Joshua Needham", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "joshua.needham@cognizant.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?, ?)[0m  [["email", "joshua.needham@cognizant.com"], ["encrypted_password", "$2a$11$GuvloqDinoCf2SvTx24.l.Cmltdm9dTHFJ.8h8Yj1C4D9Jthfw1Gi"], ["created_at", "2019-05-29 14:18:06.268403"], ["updated_at", "2019-05-29 14:18:06.268403"], ["name", "Joshua Needham"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-05-29 14:18:06.271493"], ["last_sign_in_at", "2019-05-29 14:18:06.271493"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-05-29 14:18:06.272141"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://localhost:3000/
+Completed 302 Found in 161ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2019-05-29 10:18:06 -0400
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-05-29 10:18:09 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_edit_html_erb__2693082336007584240_70245775701700 at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/registrations/edit.html.erb:4)
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 0.2ms)
+=======
+>>>>>>> 5114d4c
  (called from block in _app_views_devise_registrations_new_html_erb__2639755215209862048_70346331158760 at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/registrations/new.html.erb:6)
   Rendered devise/shared/_links.html.erb (0.6ms)
   Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
 Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+<<<<<<< HEAD
+=======
+>>>>>>> Updating gems due to security issues
+>>>>>>> 5114d4c
 
 
 DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
@@ -51828,6 +51930,40 @@ for all models and all boolean columns, after which the flag must be set to
 true by adding the following to your application.rb file:
 
   Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+ (called from <top (required)> at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /Users/m_700853/Sites/Rails/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
+=======
+>>>>>>> 5114d4c
  (called from <top (required)> at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/models/application_record.rb:1)
 Started POST "/users" for ::1 at 2019-05-20 19:04:09 -0400
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -51852,3 +51988,7 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 271ms (Views: 265.7ms | ActiveRecord: 0.2ms)
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> Updating gems due to security issues
+>>>>>>> 5114d4c
