@@ -51992,3 +51992,368 @@ Completed 200 OK in 271ms (Views: 265.7ms | ActiveRecord: 0.2ms)
 =======
 >>>>>>> Updating gems due to security issues
 >>>>>>> 5114d4c
+Started GET "/" for ::1 at 2019-10-13 20:56:38 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/e511cc267c76f14d/variables" for ::1 at 2019-10-13 20:56:39 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKeyConstraintToActiveStorageAttachmentsForBlobId (20191014015247)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191014015247"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-10-13 20:56:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms | Allocations: 2556)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-13 20:56:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 561)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 4718)
+Completed 500  in 2103ms (ActiveRecord: 0.9ms | Allocations: 213811)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'users/pages.source.coffee'
+Checked in these paths: 
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/config
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/images
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/javascripts
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/stylesheets
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/coffee-rails-5.0.0/lib/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actioncable-6.0.0/app/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activestorage-6.0.0/app/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-6.0.0/lib/assets/compiled
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/node_modules
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/popper_js-1.14.5/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootstrap-4.3.1/assets/stylesheets
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootstrap-4.3.1/assets/javascripts:
+  app/views/layouts/application.html.erb:7
+
+Started POST "/__better_errors/b8ed45ab6aafcbf1/variables" for ::1 at 2019-10-13 20:57:02 -0500
+Started GET "/users/sign_in" for ::1 at 2019-10-13 20:58:07 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 2.1ms | Allocations: 603)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 561)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.4ms | Allocations: 9597)
+Completed 500  in 242ms (ActiveRecord: 0.6ms | Allocations: 65345)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'users/pages.source.coffee'
+Checked in these paths: 
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/config
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/images
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/javascripts
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/assets/stylesheets
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/coffee-rails-5.0.0/lib/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actioncable-6.0.0/app/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activestorage-6.0.0/app/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-6.0.0/lib/assets/compiled
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/node_modules
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/popper_js-1.14.5/assets/javascripts
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootstrap-4.3.1/assets/stylesheets
+  /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/bootstrap-4.3.1/assets/javascripts:
+  app/views/layouts/application.html.erb:7
+
+Started POST "/__better_errors/0e1c56e4d3c5f6f5/variables" for ::1 at 2019-10-13 20:58:08 -0500
+Started GET "/" for ::1 at 2019-10-13 21:12:57 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms | Allocations: 2291)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-13 21:12:57 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 1.2ms | Allocations: 317)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 561)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.1ms | Allocations: 4818)
+Completed 500  in 1371ms (ActiveRecord: 0.6ms | Allocations: 111333)
+
+
+
+LoadError - cannot load such file -- coffee_script:
+
+Started POST "/__better_errors/b0e8f836b7215761/variables" for ::1 at 2019-10-13 21:12:58 -0500
+Started POST "/__better_errors/b0e8f836b7215761/variables" for ::1 at 2019-10-13 21:13:09 -0500
+Started GET "/users/sign_in" for ::1 at 2019-10-13 21:18:39 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 2.3ms | Allocations: 616)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 561)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 30.9ms | Allocations: 9711)
+Completed 500  in 198ms (ActiveRecord: 0.6ms | Allocations: 42636)
+
+
+
+LoadError - cannot load such file -- coffee_script:
+
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:40 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:45 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:49 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:51 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:53 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:53 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:54 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:55 -0500
+Started POST "/__better_errors/87a668194cbe45a0/variables" for ::1 at 2019-10-13 21:18:57 -0500
+Started GET "/index.html" for ::1 at 2019-10-13 21:19:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+rack-contrib (2.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+meta_request (0.7.2) lib/meta_request/middlewares/headers.rb:16:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (4.2.1) lib/puma/configuration.rb:228:in `call'
+puma (4.2.1) lib/puma/server.rb:667:in `handle_request'
+puma (4.2.1) lib/puma/server.rb:470:in `process_client'
+puma (4.2.1) lib/puma/server.rb:328:in `block in run'
+puma (4.2.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-13 21:23:41 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms | Allocations: 2421)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-13 21:23:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 1.1ms | Allocations: 317)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 561)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.3ms | Allocations: 4820)
+Completed 500  in 95ms (ActiveRecord: 0.6ms | Allocations: 32509)
+
+
+
+LoadError - cannot load such file -- coffee_script:
+
+Started POST "/__better_errors/0fd6e265c6eebc3b/variables" for ::1 at 2019-10-13 21:23:41 -0500
+Started GET "/users/sign_in" for ::1 at 2019-10-13 21:25:03 -0500
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 2.3ms | Allocations: 616)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 561)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.5ms | Allocations: 9710)
+Completed 200 OK in 1868ms (Views: 1819.4ms | ActiveRecord: 1.1ms | Allocations: 239093)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-13 21:25:11 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 0.3ms | Allocations: 106)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_erb__3196154850230244078_70286814854860 at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/registrations/new.html.erb:6)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 120)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2851)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 14699)
+
+
+Started POST "/users" for ::1 at 2019-10-13 21:25:29 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"oThey3XvwY8/HmSS0hBmxHqqngljq5TG10bd+ZuioMBIT5OR6fBz/BMMc0psDh8KtnVTwwZYzfmNR6xd5byJeg==", "user"=>{"email"=>"test@test.com", "name"=>"Joshua Needham", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 0.4ms | Allocations: 94)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_erb__3196154850230244078_70286814854860 at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/registrations/new.html.erb:6)
+  Rendered /Users/joshua/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 420)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3369)
+Completed 200 OK in 154ms (Views: 22.4ms | ActiveRecord: 0.2ms | Allocations: 26920)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-13 21:25:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_fb_login.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 130)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1842)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 12979)
+
+
+Started GET "/users/password/new" for ::1 at 2019-10-13 21:25:38 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_new_html_erb___2855181032020144921_70286790892360 at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/passwords/new.html.erb:4)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1666)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 13460)
+
+
+Started POST "/users/password" for ::1 at 2019-10-13 21:25:42 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"JKSEp9ojCxUMJWT+Kn+wrcDeykoO0FEJwGKsokbht24eTS9Mq2aljRQAYhIQ2gImfXUBbEH4mAjlzwmh7qXWwQ==", "user"=>{"email"=>"test@test.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["reset_password_token", "73778b03aa995a17b509030e5d445c82e47910485094419dbd158a267d6922f6"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "73778b03aa995a17b509030e5d445c82e47910485094419dbd158a267d6922f6"], ["reset_password_sent_at", "2019-10-14 02:25:43.114599"], ["updated_at", "2019-10-14 02:25:43.114796"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 1.4ms | Allocations: 2742)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 5.0ms
+Completed 500  in 245ms (ActiveRecord: 1.5ms | Allocations: 38455)
+
+
+
+ArgumentError - Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true:
+  app/views/devise/mailer/reset_password_instructions.html.erb:5
+
+Started POST "/__better_errors/6f7a3928e81928e0/variables" for ::1 at 2019-10-13 21:25:43 -0500
+Started POST "/users/password" for ::1 at 2019-10-13 21:28:55 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"JKSEp9ojCxUMJWT+Kn+wrcDeykoO0FEJwGKsokbht24eTS9Mq2aljRQAYhIQ2gImfXUBbEH4mAjlzwmh7qXWwQ==", "user"=>{"email"=>"test@test.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["reset_password_token", "2af53a8fbfdc88f2f036d3cae845b080eacdd6166089d25ecd29313a0e786f2e"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "2af53a8fbfdc88f2f036d3cae845b080eacdd6166089d25ecd29313a0e786f2e"], ["reset_password_sent_at", "2019-10-14 02:28:55.732442"], ["updated_at", "2019-10-14 02:28:55.732702"], ["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 8.2ms | Allocations: 1961)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 50.7ms
+Delivered mail 5da3dd67d2e83_ae5b3fe3f60cb88064499@unknown38f9d38308d5.attlocal.net.mail (16.0ms)
+Date: Sun, 13 Oct 2019 21:28:55 -0500
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: test@test.com
+Message-ID: <5da3dd67d2e83_ae5b3fe3f60cb88064499@unknown38f9d38308d5.attlocal.net.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello test@test.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=iSidwBQbe-KAQya2xeRM">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to https://localhost:3000/users/sign_in
+Completed 302 Found in 365ms (ActiveRecord: 2.2ms | Allocations: 64896)
+
+
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for ::1 at 2019-10-13 21:29:40 -0500
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendering devise/passwords/edit.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_passwords_edit_html_erb__1090094979899322856_70248343245380 at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/passwords/edit.html.erb:4)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 526)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 13.6ms | Allocations: 6201)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.0ms | Allocations: 32791)
+
+
+Started PUT "/users/password" for ::1 at 2019-10-13 21:29:49 -0500
+Processing by Devise::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"OtRk2ko5CSJw8BfADriTHI3QhWaTXI1Ak8Dd397MXvViC21/vE8+ONjLA1ob70b2c4Q5R3BJ7AaoXO8rlu2Amw==", "user"=>{"reset_password_token"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Change my password"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["reset_password_token", "2af53a8fbfdc88f2f036d3cae845b080eacdd6166089d25ecd29313a0e786f2e"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "reset_password_sent_at" = ?, "encrypted_password" = ?, "reset_password_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_sent_at", nil], ["encrypted_password", "$2a$11$/CbASQoL1hU8GkwbTuyu1epdNG.HLAupbAK2B879h5PvR28P/7DwW"], ["reset_password_token", nil], ["updated_at", "2019-10-14 02:29:49.996628"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 2], ["current_sign_in_at", "2019-10-14 02:29:50.002978"], ["updated_at", "2019-10-14 02:29:50.003104"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://localhost:3000/
+Completed 302 Found in 139ms (ActiveRecord: 2.1ms | Allocations: 20008)
+
+
+Started GET "/" for ::1 at 2019-10-13 21:29:50 -0500
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 161)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 13910)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-13 21:29:54 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_edit_html_erb__3876009503328200891_70248318546140 at /Users/joshua/Sites/rails-5-devise-omniauth-facebook-bootstrap/app/views/devise/registrations/edit.html.erb:4)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2885)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.1ms | Allocations: 16731)
+
+
+Started GET "/" for ::1 at 2019-10-13 21:30:00 -0500
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 13009)
+
+

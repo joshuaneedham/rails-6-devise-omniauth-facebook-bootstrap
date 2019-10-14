@@ -1,4 +1,4 @@
-# Rails 5 Devise Omniauth Omniauth-Facebook Bootstrap
+# Rails 6 Devise Omniauth Omniauth-Facebook Bootstrap
 
 This base project aims to make using `devise`, `omniauth`, `omniauth-facebook`, and `bootstrap` as simple as possible. All that is required is creating a Facebook app, adding your app_id and app_secret to the .env file, editing the .gitignore file to include .env so you don't share your app credentials with the world if pushing to a public repository, and voila.
 
